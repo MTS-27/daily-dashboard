@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="theme-toggle">🌙</button>
+
+  <div class="dashboard">
+    <div class="widget" id="clock">
+      <div class="flip-clock">
+        <div class="digit" id="hour1"></div>
+        <div class="digit" id="hour2"></div>
+        <div class="colon">:</div>
+        <div class="digit" id="minute1"></div>
+        <div class="digit" id="minute2"></div>
+        <div class="colon">:</div>
+        <div class="digit" id="second1"></div>
+        <div class="digit" id="second2"></div>
+      </div>
+      <div class="widget" id="weather">
+        <h2>Weather</h2>
+        <p>Loading...</p>
+      </div>
+    </div>
+
+    <div class="widget" id="quote"></div>
+
+    <div class="widget" id="todo">
+      <h2>To-Do List</h2>
+      <div class="filter-buttons">
+        <button data-filter="all" class="filter active">All</button>
+        <button data-filter="completed" class="filter">Completed</button>
+        <button data-filter="pending" class="filter">Pending</button>
+      </div>
+      <input type="text" id="todo-input" placeholder="Add a task..." />
+      <ul id="todo-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
